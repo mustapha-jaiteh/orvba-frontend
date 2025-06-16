@@ -47,7 +47,7 @@ function Home() {
       <div class="w-full min-h-screen">
         <Navbar />
 
-        <header className="App-header bg-[url('./images/car-3.jpg')] lg:bg-[url('./images/car-1.jpg')] bg-cover bg-center w-full h-screen  ">
+        <header className="App-header bg-cover bg-center w-full h-screen  ">
           <picture className="relative top-0 left-0 w-full h-full">
             <source srcSet="./images/car-1.jpg" media="(min-width: 1024px)" />
             <source srcSet="./images/car-1.jpg" media="(min-width: 640px)" />
