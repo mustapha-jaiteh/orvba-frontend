@@ -59,7 +59,7 @@ const BookService = () => {
 
     try {
       const response = await axios.post(
-        "http://orvba-fullstack-production.up.railway.app/api/booking",
+        "https://orvba-fullstack-production.up.railway.app/api/booking",
         payload,
         {
           headers: {

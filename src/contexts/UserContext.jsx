@@ -39,7 +39,7 @@ export const UserProvider = ({ children }) => {
     if (!user?.license_plate) return;
 
     fetch(
-      `http://orvba-fullstack-production.up.railway.app/api/user/services/${user.license_plate}`
+      `https://orvba-fullstack-production.up.railway.app/api/user/services/${user.license_plate}`
     )
       .then((res) => res.json())
       .then((data) => {

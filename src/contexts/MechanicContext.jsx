@@ -29,7 +29,7 @@ export const MechanicProvider = ({ children }) => {
     if (!mechanic?.mechanic_license) return;
 
     fetch(
-      `http://orvba-fullstack-production.up.railway.app/api/mechanic/bookings/${mechanic.mechanic_license}`
+      `https://orvba-fullstack-production.up.railway.app/api/mechanic/bookings/${mechanic.mechanic_license}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -44,7 +44,7 @@ export const MechanicProvider = ({ children }) => {
     if (!mechanic?.mechanic_license) return;
 
     fetch(
-      `http://orvba-fullstack-production.up.railway.app/api/mechanic/services/${mechanic.mechanic_license}`
+      `https://orvba-fullstack-production.up.railway.app/api/mechanic/services/${mechanic.mechanic_license}`
     )
       .then((res) => res.json())
       .then((data) => {

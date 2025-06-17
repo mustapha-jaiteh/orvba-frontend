@@ -87,7 +87,7 @@ const MechanicRegister = () => {
       //     password_confirmation: formData.password_confirmation, // Ensure password confirmation is included
       // });
       const response = await axios.post(
-        "http://orvba-fullstack-production.up.railway.app/api/mechanic_register",
+        "https://orvba-fullstack-production.up.railway.app/api/mechanic_register",
         formData,
 
         {

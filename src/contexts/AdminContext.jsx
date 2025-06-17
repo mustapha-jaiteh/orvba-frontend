@@ -31,21 +31,21 @@ export const AdminProvider = ({ children }) => {
   useEffect(() => {
     // Fetch Users
     axios
-      .get("http://orvba-fullstack-production.up.railway.app/api/admin/users")
+      .get("https://orvba-fullstack-production.up.railway.app/api/admin/users")
       .then((response) => setUsers(response.data))
       .catch((error) => console.error("Error fetching users:", error));
 
     // Fetch Mechanics
     axios
       .get(
-        "http://orvba-fullstack-production.up.railway.app/api/admin/mechanics"
+        "https://orvba-fullstack-production.up.railway.app/api/admin/mechanics"
       )
       .then((response) => setMechanics(response.data))
       .catch((error) => console.error("Error fetching mechanics:", error));
     // Fetch Bookings
     axios
       .get(
-        "http://orvba-fullstack-production.up.railway.app/api/admin/bookings"
+        "https://orvba-fullstack-production.up.railway.app/api/admin/bookings"
       )
       .then((response) => setBookings(response.data))
       .catch((error) => console.error("Error fetching bookings:", error));
@@ -53,7 +53,7 @@ export const AdminProvider = ({ children }) => {
     // Fetch Services
     axios
       .get(
-        "http://orvba-fullstack-production.up.railway.app/api/admin/services"
+        "https://orvba-fullstack-production.up.railway.app/api/admin/services"
       )
       .then((response) => setServices(response.data))
       .catch((error) => console.error("Error fetching services:", error));
@@ -61,7 +61,7 @@ export const AdminProvider = ({ children }) => {
     // Fetch Services
     axios
       .get(
-        "http://orvba-fullstack-production.up.railway.app/api/admin/feedbacks"
+        "https://orvba-fullstack-production.up.railway.app/api/admin/feedbacks"
       )
       .then((response) => setFeedback(response.data))
       .catch((error) => console.error("Error fetching feedback:", error));
@@ -70,7 +70,7 @@ export const AdminProvider = ({ children }) => {
     try {
       // Optional API call if you have backend logout logic
       await axios.post(
-        "http://orvba-fullstack-production.up.railway.app/api/admin/logout",
+        "https://orvba-fullstack-production.up.railway.app/api/admin/logout",
         {},
         {
           headers: {
