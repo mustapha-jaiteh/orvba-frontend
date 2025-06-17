@@ -28,11 +28,11 @@ import Router from "../router";
 
 // Create an instance of Axios with base URL
 const axiosClient = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL, // Laravel API base URL
-    headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-    },
+  baseURL: import.meta.env.REACT_APP_API_URL, // "https://orvba-fullstack-production.up.railway.app/api",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
 });
 
 export default axiosClient;
