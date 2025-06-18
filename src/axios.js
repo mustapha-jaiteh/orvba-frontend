@@ -28,7 +28,7 @@ import Router from "../router";
 
 // Create an instance of Axios with base URL
 const axiosClient = axios.create({
-  baseURL: import.meta.env.REACT_APP_API_URL, // "https://orvba-fullstack-production.up.railway.app/api",
+  baseURL: "https://orvba-fullstack-production.up.railway.app/api",
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",
