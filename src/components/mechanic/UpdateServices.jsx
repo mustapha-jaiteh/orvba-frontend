@@ -46,7 +46,7 @@ const UpdateServices = ({}) => {
     console.log(form);
     try {
       await axios.post(
-        "https://orvba-fullstack-production.up.railway.app/api/mechanic/service-update",
+        "https://41dd-102-140-139-95.ngrok-free.app/api/mechanic/service-update",
         form
       );
       alert("Service updated successfully!");

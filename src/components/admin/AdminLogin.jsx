@@ -25,7 +25,7 @@ const AdminLogin = ({ adminLoginClose }) => {
     //fetch admin login credentials
     try {
       const response = await axios.post(
-        "https://orvba-fullstack-production.up.railway.app/api/admin-login",
+        "https://41dd-102-140-139-95.ngrok-free.app/api/admin-login",
         formData,
         {
           headers: {
