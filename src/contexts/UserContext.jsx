@@ -39,7 +39,7 @@ export const UserProvider = ({ children }) => {
     if (!user?.license_plate) return;
 
     fetch(
-      `https://41dd-102-140-139-95.ngrok-free.app/api/user/services/${user.license_plate}`
+      `https://1e81-102-140-138-107.ngrok-free.app/api/user/services/${user.license_plate}`
     )
       .then((res) => res.json())
       .then((data) => {

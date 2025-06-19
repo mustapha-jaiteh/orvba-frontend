@@ -31,30 +31,30 @@ export const AdminProvider = ({ children }) => {
   useEffect(() => {
     // Fetch Users
     axios
-      .get("https://41dd-102-140-139-95.ngrok-free.app/api/admin/users")
+      .get("https://1e81-102-140-138-107.ngrok-free.app/api/admin/users")
       .then((response) => setUsers(response.data))
       .catch((error) => console.error("Error fetching users:", error));
 
     // Fetch Mechanics
     axios
-      .get("https://41dd-102-140-139-95.ngrok-free.app/api/admin/mechanics")
+      .get("https://1e81-102-140-138-107.ngrok-free.app/api/admin/mechanics")
       .then((response) => setMechanics(response.data))
       .catch((error) => console.error("Error fetching mechanics:", error));
     // Fetch Bookings
     axios
-      .get("https://41dd-102-140-139-95.ngrok-free.app/api/admin/bookings")
+      .get("https://1e81-102-140-138-107.ngrok-free.app/api/admin/bookings")
       .then((response) => setBookings(response.data))
       .catch((error) => console.error("Error fetching bookings:", error));
 
     // Fetch Services
     axios
-      .get("https://41dd-102-140-139-95.ngrok-free.app/api/admin/services")
+      .get("https://1e81-102-140-138-107.ngrok-free.app/api/admin/services")
       .then((response) => setServices(response.data))
       .catch((error) => console.error("Error fetching services:", error));
     // Fetch Feedback
     // Fetch Services
     axios
-      .get("https://41dd-102-140-139-95.ngrok-free.app/api/admin/feedbacks")
+      .get("https://1e81-102-140-138-107.ngrok-free.app/api/admin/feedbacks")
       .then((response) => setFeedback(response.data))
       .catch((error) => console.error("Error fetching feedback:", error));
   }, []);
@@ -62,7 +62,7 @@ export const AdminProvider = ({ children }) => {
     try {
       // Optional API call if you have backend logout logic
       await axios.post(
-        "https://41dd-102-140-139-95.ngrok-free.app/api/admin/logout",
+        "https://1e81-102-140-138-107.ngrok-free.app/api/admin/logout",
         {},
         {
           headers: {

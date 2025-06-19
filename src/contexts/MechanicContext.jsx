@@ -29,7 +29,7 @@ export const MechanicProvider = ({ children }) => {
     if (!mechanic?.mechanic_license) return;
 
     fetch(
-      `https://41dd-102-140-139-95.ngrok-free.app/api/mechanic/bookings/${mechanic.mechanic_license}`
+      `https://1e81-102-140-138-107.ngrok-free.app/api/mechanic/bookings/${mechanic.mechanic_license}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -44,7 +44,7 @@ export const MechanicProvider = ({ children }) => {
     if (!mechanic?.mechanic_license) return;
 
     fetch(
-      `https://41dd-102-140-139-95.ngrok-free.app/api/mechanic/services/${mechanic.mechanic_license}`
+      `https://1e81-102-140-138-107.ngrok-free.app/api/mechanic/services/${mechanic.mechanic_license}`
     )
       .then((res) => res.json())
       .then((data) => {

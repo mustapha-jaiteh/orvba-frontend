@@ -87,7 +87,7 @@ const MechanicRegister = () => {
       //     password_confirmation: formData.password_confirmation, // Ensure password confirmation is included
       // });
       const response = await axios.post(
-        "https://41dd-102-140-139-95.ngrok-free.app/api/mechanic_register",
+        "https://1e81-102-140-138-107.ngrok-free.app/api/mechanic_register",
         formData,
 
         {

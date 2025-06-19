@@ -4,7 +4,7 @@ import Router from "../router";
 
 // Create an instance of Axios with base URL
 const axiosClient = axios.create({
-  baseURL: "https://41dd-102-140-139-95.ngrok-free.app/api",
+  baseURL: "https://1e81-102-140-138-107.ngrok-free.app/api",
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",
